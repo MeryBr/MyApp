@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:visibility="visible"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/faustina"
+        android:text="@string/logo_text"
+        android:textColor="@color/colorAzulBrillante"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imagePillBox"
+        android:layout_width="159dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAppName"
+        app:srcCompat="@drawable/tabl"
+        tools:ignore="ContentDescription"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="544dp"
+        android:elevation="16dp"
+        android:fontFamily="@font/faustina"
+        android:text="@string/register"
+        android:textColor="@color/colorLetraInterna"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:onClick="btnRegister"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="140dp"
+        android:elevation="16dp"
+        android:fontFamily="@font/faustina"
+        android:onClick="btnLogin"
+        android:text="@string/login"
+        android:textColor="@color/colorLetraInterna"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePillBox"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/buttonHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:fontFamily="@font/faustina"
+        android:onClick="btn_help"
+        android:text="@string/help"
+        android:textColor="@color/white"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

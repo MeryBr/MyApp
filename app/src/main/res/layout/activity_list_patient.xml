@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:visibility="visible"
+    tools:layout_editor_absoluteY="25dp"
+    tools:context=".ListPatientsActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_toolbar"
+        app:menu="@menu/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <include
+            android:id="@+id/layoutToolbar"
+            layout="@layout/layout_toolbar" />
+
+
+        <ImageView
+            android:id="@+id/imageidregisterr"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layoutToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_menu_ui_checklist_check_icon"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:id="@+id/patientlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageidregisterr"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/faustina"
+            android:text="@string/patientlist"
+            android:textColor="@color/colorBotonSecundario"
+            android:textSize="20sp" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="201dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/patientlist"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:queryHint="Search..."
+            app:iconifiedByDefault="false" />
+
+        <ImageButton
+            android:id="@+id/imageaddnewpatient"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/searchView"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="-49dp"
+            android:layout_toEndOf="@+id/searchView"
+            android:onClick="btnAddNewPatient"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Add new patient to the list"
+            android:scaleType="fitCenter"
+            android:src="@drawable/badge_plus_icon" />
+
+        <RelativeLayout
+            android:layout_width="359dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/imageaddnewpatient"
+            android:layout_alignParentStart="true">
+
+            <!-- Nombre del paciente -->
+            <ListView
+                android:id="@+id/listViewPatientName"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:text="Nombre del Paciente" />
+
+            <ImageButton
+                android:id="@+id/btnModify"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/listViewPatientName"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/your_modify_icon" />
+
+            <ImageButton
+                android:id="@+id/btnAllergies"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/btnModify"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/your_allergies_icon" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/btnAllergies"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/your_delete_icon" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

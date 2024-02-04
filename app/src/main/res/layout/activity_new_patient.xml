@@ -1,0 +1,254 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_gradient"
+        android:visibility="visible"
+        tools:context=".NewPatientActivity"
+        tools:layout_editor_absoluteY="25dp">
+
+        <include
+            android:id="@+id/layoutToolbar"
+            layout="@layout/layout_toolbar" />
+
+        <ImageView
+            android:id="@+id/imageAddPacient"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/add_pacient_image_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/free_icon_font_user_add_3917582"
+            tools:layout_editor_absoluteY="80dp"
+            app:layout_constraintTop_toBottomOf="@id/layoutToolbar" />
+
+        <TextView
+            android:id="@+id/editAddnewpatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/faustina"
+            android:text="@string/add_new_patient"
+            android:textColor="@color/colorBotonSecundario"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageAddPacient" />
+
+
+        <EditText
+            android:id="@+id/editPersonNamePatient"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/nameofpatient"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editAddnewpatient" />
+
+        <EditText
+            android:id="@+id/editPersonLastPatient"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/lastnameofpatient"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPersonNamePatient" />
+
+        <EditText
+            android:id="@+id/editDatePatient"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/datebirth"
+            android:inputType="none"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPersonLastPatient" />
+
+
+        <EditText
+            android:id="@+id/editTextPhonePatient"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/phonepatient"
+            android:inputType="phone"
+            android:autofillHints="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDatePatient" />
+
+        <EditText
+            android:id="@+id/editEmailAddressPatient"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/emailpatient"
+            android:inputType="textEmailAddress"
+            android:autofillHints="email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhonePatient" />
+
+        <EditText
+            android:id="@+id/editPostalAddressPatient"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/adresspatient"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:autofillHints="postalAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEmailAddressPatient" />
+
+        <EditText
+            android:id="@+id/editMedicalcentr"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/medicalcentr"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:autofillHints="MedicalCentr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPostalAddressPatient" />
+
+        <EditText
+            android:id="@+id/editdoctorname"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/doctorname"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:autofillHints="DoctorName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editMedicalcentr" />
+
+        <EditText
+            android:id="@+id/editContactdoctor"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/contactdoctor"
+            android:inputType="phone"
+            android:autofillHints="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editdoctorname" />
+
+        <EditText
+            android:id="@+id/editEmailDoctor"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/emaildoctor"
+            android:inputType="textEmailAddress"
+            android:autofillHints="email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editContactdoctor" />
+
+        <EditText
+            android:id="@+id/editTextaddinfo"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/faustina"
+            android:hint="@string/addinfo"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:autofillHints="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEmailDoctor" />
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="215dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:elevation="16dp"
+            android:fontFamily="@font/faustina"
+            android:onClick="btnRegister"
+            android:text="@string/btnRegister"
+            android:textColor="@color/colorLetraInterna"
+            android:visibility="visible"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonHelp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextaddinfo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/buttonHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparente"
+            android:fontFamily="@font/faustina"
+            android:onClick="btn_help"
+            android:text="@string/help"
+            android:textColor="@color/white"
+            app:cornerRadius="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

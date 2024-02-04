@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Pill Box</string>
+    <string name="logo_text">PillBox App</string>
+    <string name="app_symbol">App Symbol</string>
+    <string name="login">Login</string>
+    <string name="name_or_email">Name or Email</string>
+    <string name="enter_your_password">password</string>
+    <string name="register_your_password">Your password</string>
+    <string name="repeat_your_password">Repeat your password</string>
+    <string name="help">Do you need help ?</string>
+    <string name="chek_img">Descriptive image of ID card</string>
+    <string name="text_login">LOG ON TO</string>
+    <string name="btn_signin">SIGN IN</string>
+    <string name="register">REGISTER</string>
+    <string name="btn_enter">ENTER</string>
+    <string name="btnRegister">Saving the new patient</string>
+    <string name="add_new_patient">Add new patient</string>
+    <string name="add_pacient_image_description">Descriptive image of adding new patient</string>
+    <string name="add_new_profes_image_description">Descriptive image of adding new pharmaceutical professional</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="email_address">Email address</string>
+    <string name="remember_me">Remember me</string>
+    <string name="patientlist">Hi, here is your patient list</string>
+    <string name="nameofpatient">Name of patient</string>
+    <string name="lastnameofpatient">Lastname</string>
+    <string name="datebirth">Date of birth</string>
+    <string name="phonepatient">Phone number</string>
+    <string name="emailpatient">Email</string>
+    <string name="adresspatient">Address</string>
+    <string name="medicalcentr">Name of Medical center</string>
+    <string name="doctorname">Name of Doctor</string>
+    <string name="contactdoctor">Contat phone number</string>
+    <string name="emaildoctor">Contact email</string>
+    <string name="addinfo">Add space</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
+
+
+</resources>
